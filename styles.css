@@ -5,25 +5,27 @@
 
 /* ───── Tokens ───── */
 :root {
-  /* Colors */
-  --cream: #F4EDE0;
-  --cream-soft: #F8F3E9;
-  --cream-deep: #EAE0CC;
-  --paper: #FBF7EE;
+  /* Warm bone palette — more cohesive than the previous beige/green/orange mix */
+  --cream: #EFE8DA;
+  --cream-soft: #F3EEE2;
+  --cream-deep: #E2D7BF;
+  --paper: #F7F2E5;
 
-  --sage: #6B7E60;
-  --sage-deep: #3F4D3A;
-  --sage-soft: #A9B59E;
+  /* Deep ink replaces forest green as the dominant dark — warmer, more editorial */
+  --sage: #4A5246;
+  --sage-deep: #1F1B14;
+  --sage-soft: #7B7E6B;
 
-  --terracotta: #C66B47;
-  --terracotta-deep: #A04E2E;
-  --clay: #B8907A;
+  /* Muted sienna replaces saturated terracotta */
+  --terracotta: #9C5440;
+  --terracotta-deep: #7A3E2F;
+  --clay: #BD9180;
 
-  --ink: #2A2620;
-  --ink-soft: #54493B;
-  --ink-mute: #8B7E6C;
-  --line: #D9CFBA;
-  --line-soft: #E6DCC6;
+  --ink: #211A11;
+  --ink-soft: #4D4337;
+  --ink-mute: #7E7363;
+  --line: #D2C5AC;
+  --line-soft: #DECFB5;
 
   /* Fonts */
   --font-display: "Newsreader", "Cormorant Garamond", Georgia, serif;
@@ -323,8 +325,7 @@ em {
 .hero {
   position: relative;
   padding: clamp(3rem, 8vw, 6rem) var(--gutter) clamp(3rem, 6vw, 4rem);
-  max-width: var(--max);
-  margin: 0 auto;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -335,6 +336,8 @@ em {
   align-items: center;
   position: relative;
   z-index: 2;
+  max-width: var(--max);
+  margin: 0 auto;
 }
 
 .hero-text { display: flex; flex-direction: column; gap: 1.75rem; }
@@ -583,6 +586,7 @@ em {
 .about {
   padding: clamp(5rem, 9vw, 8rem) 0;
   background: var(--cream);
+  width: 100%;
 }
 
 .about-grid {
