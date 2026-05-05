@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+.env
+.env.local
+.wrangler
+.dev.vars
+*.log
+.vscode
+.idea
+.claude
+dist
+.cache

@@ -1,0 +1,13 @@
+{
+  "name": "praxis-petra-schemmann",
+  "version": "1.0.0",
+  "description": "Praxis für Physiotherapie und Klopftherapie · Petra Schemmann · Eigeltingen-Münchhöf",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev . --port 8788",
+    "deploy": "wrangler pages deploy . --project-name=praxis-petra-schemann"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

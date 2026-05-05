@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://praxis-petra-schemann.pages.dev/sitemap.xml
