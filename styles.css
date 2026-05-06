@@ -7,9 +7,9 @@
 :root {
   /* Off-white canvas with old-site colors as accents
      Purple (primary brand) · Turquoise (secondary) · Orange (warm CTAs) */
-  --cream: #F8F5EE;
-  --cream-soft: #FBF9F4;
-  --cream-deep: #EDE6D6;
+  --cream: #FBFAF6;
+  --cream-soft: #FDFCF9;
+  --cream-deep: #EFE9D9;
   --paper: #FFFFFF;
 
   /* "sage-deep" alias keeps existing rules working — now points to deep purple-ink */
