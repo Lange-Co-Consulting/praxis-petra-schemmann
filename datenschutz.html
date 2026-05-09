@@ -119,15 +119,52 @@
     </section>
 
     <section>
-      <h2>8. Cookies</h2>
+      <h2>8. Cookies &amp; Local Storage</h2>
       <p>
-        Diese Website setzt keine eigenen Tracking-Cookies. Der Hosting-Anbieter Cloudflare kann zur Sicherheit und
-        Funktionalität technisch notwendige Cookies setzen.
+        Diese Website setzt <strong>keine Tracking- oder Marketing-Cookies</strong> und führt keine Reichweitenanalyse durch.
+        Im Browser wird ausschließlich ein technisch notwendiger Eintrag im Local&nbsp;Storage gespeichert
+        (Schlüssel <code>pps_cookie_consent</code>), der Ihre Auswahl aus dem Cookie-Banner protokolliert.
+        Rechtsgrundlage: § 25 Abs.&nbsp;2 Nr.&nbsp;2 TTDSG (unbedingt erforderlich für den vom Nutzer ausdrücklich gewünschten Dienst).
+      </p>
+      <p>
+        Der Eintrag enthält die gewählten Kategorien (notwendig, externe Medien), einen Zeitstempel und eine Versionsnummer.
+        Er läuft automatisch nach 12&nbsp;Monaten ab und wird neu abgefragt. Sie können Ihre Auswahl jederzeit über den Link
+        <a href="#" data-open-cookie-settings>„Cookie-Einstellungen"</a> im Footer ändern oder im Browser löschen.
+      </p>
+      <p>
+        Der Hosting-Anbieter Cloudflare kann zusätzlich technisch notwendige Cookies (z.&nbsp;B. zum Schutz vor Angriffen)
+        setzen.
       </p>
     </section>
 
     <section>
-      <h2>9. Ihre Rechte</h2>
+      <h2>9. Google Maps (externe Medien)</h2>
+      <p>
+        Auf dieser Website ist eine Karte des Dienstes <strong>Google Maps</strong> (Google&nbsp;Ireland Limited,
+        Gordon House, Barrow Street, Dublin&nbsp;4, Irland; Mutterkonzern: Google&nbsp;LLC, USA) eingebunden, um die
+        Anfahrt zur Praxis zu zeigen.
+      </p>
+      <p>
+        Die Karte wird <strong>erst dann geladen</strong>, wenn Sie der Kategorie „Externe Medien" im Cookie-Banner
+        ausdrücklich zustimmen oder die Karte über den Aktivierungs-Button auf der Anfahrtsseite freigeben.
+        Erst mit der Aktivierung werden Daten — insbesondere Ihre IP-Adresse, der Browser- und Geräte-Fingerabdruck
+        sowie die aufgerufene URL — an Google übertragen, ggf. auch in die USA.
+      </p>
+      <p>
+        Rechtsgrundlage ist Ihre Einwilligung gemäß Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO sowie § 25 Abs.&nbsp;1 TTDSG.
+        Die Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die Kategorie
+        „Externe Medien" in den <a href="#" data-open-cookie-settings>Cookie-Einstellungen</a> wieder deaktivieren.
+        Für die USA bestehen Standardvertragsklauseln (SCCs) gemäß Art.&nbsp;46 DSGVO; zudem ist Google nach dem
+        EU-US&nbsp;Data&nbsp;Privacy&nbsp;Framework zertifiziert.
+      </p>
+      <p>
+        Datenschutzerklärung von Google:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Ihre Rechte</h2>
       <p>
         Sie haben jederzeit das Recht auf:
       </p>
@@ -146,7 +183,7 @@
     </section>
 
     <section>
-      <h2>10. Beschwerderecht</h2>
+      <h2>11. Beschwerderecht</h2>
       <p>
         Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Zuständig ist:<br/>
         Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br/>
@@ -155,7 +192,7 @@
     </section>
 
     <section>
-      <h2>11. E-Mail-Sicherheit</h2>
+      <h2>12. E-Mail-Sicherheit</h2>
       <p>
         Bei der Kommunikation per E-Mail kann eine vollständige Datensicherheit von mir nicht gewährleistet werden.
         Bitte senden Sie mir keine sensiblen Inhalte per unverschlüsselter E-Mail.
@@ -171,10 +208,15 @@
 <footer class="site-footer">
   <div class="footer-bottom">
     <span>© <span id="year">2026</span> · Praxis Petra Schemmann</span>
+    <span class="footer-legal-links">
+      <a href="/impressum.html">Impressum</a>
+      <span aria-hidden="true">·</span>
+      <a href="#" data-open-cookie-settings>Cookie-Einstellungen</a>
+    </span>
     <span class="footer-mark">Mit Sorgfalt gestaltet · Hegau</span>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="/script.js" defer></script>
 </body>
 </html>
