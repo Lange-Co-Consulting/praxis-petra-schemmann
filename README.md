@@ -29,14 +29,14 @@ npm run deploy
 
 Das pusht direkt zum Cloudflare Pages Projekt **`praxis-petra-schemann`**.
 
-Alternativ: Code zu GitHub pushen — Cloudflare baut automatisch bei jedem Commit.
+Alternativ: Code zu GitHub pushen, Cloudflare baut automatisch bei jedem Commit.
 
 ## Kontaktformular
 
 Das Formular postet an `/api/contact`. Die Function:
 
 1. Validiert Eingaben (Pflichtfelder, E-Mail-Format, Honeypot, Längen-Limits).
-2. Sendet — falls `RESEND_API_KEY` gesetzt ist — eine E-Mail via [Resend](https://resend.com).
+2. Sendet, falls `RESEND_API_KEY` gesetzt ist, eine E-Mail via [Resend](https://resend.com).
 3. Loggt die Anfrage immer in den Cloudflare-Logs (zur Notfall-Sicherung).
 
 ### Setup für Live-E-Mail-Versand

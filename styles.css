@@ -12,7 +12,7 @@
   --cream-deep: #EFE9D9;
   --paper: #FFFFFF;
 
-  /* "sage-deep" alias keeps existing rules working — now points to deep purple-ink */
+  /* "sage-deep" alias keeps existing rules working, now points to deep purple-ink */
   --sage: #5B2D7E;
   --sage-deep: #221334;
   --sage-soft: #C9B5DE;
@@ -42,7 +42,7 @@
   --font-accent: "Gambarino", "Newsreader", Georgia, serif;
   --font-body: "Switzer", -apple-system, "Helvetica Neue", sans-serif;
 
-  /* Type scale (clamp) — Newsreader needs more px than Fraunces to feel large */
+  /* Type scale (clamp), Newsreader needs more px than Fraunces to feel large */
   --t-display-1: clamp(4rem, 10vw, 9rem);
   --t-display-2: clamp(3rem, 7vw, 5.8rem);
   --t-display-3: clamp(2.4rem, 5vw, 4rem);
@@ -508,6 +508,89 @@ em {
 @keyframes scrollDot {
   0%, 100% { transform: translateY(0); opacity: 1; }
   50% { transform: translateY(8px); opacity: 0.3; }
+}
+
+/* ───── GOOGLE RATING BAND ───── */
+.rating-band {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem var(--gutter);
+  background: var(--cream);
+  border-top: 1px solid var(--line-soft);
+}
+
+.rating-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.65rem 1.25rem 0.65rem 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  color: var(--ink);
+  transition: all .25s var(--ease);
+  flex-wrap: wrap;
+  box-shadow: 0 1px 2px rgba(26, 15, 34, 0.04);
+}
+.rating-link:hover {
+  color: var(--ink) !important;
+  border-color: var(--purple-soft);
+  background: var(--paper);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px -10px rgba(91, 45, 126, 0.25);
+}
+
+.rating-google {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; height: 24px;
+}
+
+.rating-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.rating-text {
+  font-weight: 500;
+  color: var(--ink);
+}
+.rating-text strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-right: 0.15rem;
+  color: var(--purple);
+}
+
+.rating-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--line);
+}
+
+.rating-meta {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.rating-go {
+  display: inline-flex;
+  color: var(--purple);
+  transition: transform .25s var(--ease);
+}
+.rating-link:hover .rating-go { transform: translateX(3px); }
+
+@media (max-width: 640px) {
+  .rating-link {
+    padding: 0.6rem 1rem;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+  }
+  .rating-divider, .rating-meta { display: none; }
 }
 
 /* ───── TRUST BAR ───── */

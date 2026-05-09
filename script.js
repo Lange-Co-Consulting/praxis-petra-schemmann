@@ -126,7 +126,7 @@ if (form) {
       form.reset();
     } catch (err) {
       status.classList.add('error');
-      status.textContent = `Hoppla — ${err.message}. Bitte rufen Sie an oder schreiben direkt an p.schemmann@web.de`;
+      status.textContent = `Hoppla, ${err.message}. Bitte rufen Sie an oder schreiben direkt an p.schemmann@web.de`;
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
@@ -225,7 +225,7 @@ function buildConsentBanner({ openInSettings = false } = {}) {
             <h3>Notwendig</h3>
             <p>Speichert Ihre Cookie-Auswahl im Browser. Ohne diese funktioniert die Seite nicht. Keine Übertragung an Dritte.</p>
           </div>
-          <span class="toggle is-locked" aria-label="Notwendig — immer aktiv">
+          <span class="toggle is-locked" aria-label="Notwendig, immer aktiv">
             <input type="checkbox" checked disabled tabindex="-1" />
             <span class="toggle-track"><span class="toggle-thumb"></span></span>
           </span>

@@ -51,7 +51,7 @@ export async function onRequestPost({ request, env }) {
     'Nachricht:',
     safe(message),
     '',
-    '— Gesendet via praxis-petra-schemmann.de',
+    '-- Gesendet via praxis-petra-schemmann.de',
   ].filter(Boolean).join('\n');
 
   const html = `
