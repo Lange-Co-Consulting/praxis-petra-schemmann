@@ -1000,6 +1000,10 @@ em {
   line-height: 1.55;
   font-size: 0.95rem;
 }
+.spot-card p em {
+  color: var(--clay);
+  font-style: italic;
+}
 
 .spotlight-cta { display: flex; justify-content: flex-start; }
 
