@@ -64,33 +64,33 @@
 
 /* ───── Tokens ───── */
 :root {
-  /* Off-white canvas with old-site colors as accents
-     Purple (primary brand) · Turquoise (secondary) · Orange (warm CTAs) */
+  /* Exact colors sampled 1:1 from the original Jimdo logo
+     Purple #56348B · Turquoise #0C96A3 · Orange-Red #DB440D */
   --cream: #FBFAF6;
   --cream-soft: #FDFCF9;
   --cream-deep: #EFE9D9;
   --paper: #FFFFFF;
 
-  /* "sage-deep" alias keeps existing rules working, now points to deep purple-ink */
-  --sage: #5B2D7E;
-  --sage-deep: #221334;
-  --sage-soft: #C9B5DE;
-
-  /* Old-site purple */
-  --purple: #5B2D7E;
-  --purple-deep: #3E1B5C;
+  /* Brand purple (exact match to logo rectangle) */
+  --purple: #56348B;
+  --purple-deep: #3D2466;
   --purple-soft: #C9B5DE;
 
-  /* "terracotta" alias kept; now an old-site warm orange */
-  --terracotta: #E64D1E;
-  --terracotta-deep: #B83612;
-  --clay: #2FA5A8;
+  /* Aliases used throughout — all point to the logo purple */
+  --sage: #56348B;
+  --sage-deep: #56348B;
+  --sage-soft: #C9B5DE;
 
-  /* Old-site turquoise */
-  --turquoise: #2FA5A8;
-  --turquoise-deep: #1F7A7C;
+  /* Brand orange-red (exact match to logo dot) */
+  --terracotta: #DB440D;
+  --terracotta-deep: #B33508;
 
-  --ink: #1A0F22;
+  /* Brand turquoise (exact match to logo figure) */
+  --turquoise: #0C96A3;
+  --turquoise-deep: #086874;
+  --clay: #0C96A3;
+
+  --ink: #1F1226;
   --ink-soft: #4A3D58;
   --ink-mute: #8B7E96;
   --line: #DCD2E6;
@@ -301,7 +301,18 @@ em {
   gap: 0.75rem;
   color: var(--sage-deep);
 }
-.brand-mark { display: inline-flex; }
+.brand-mark {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-name {
   font-family: var(--font-display);
