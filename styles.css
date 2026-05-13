@@ -916,7 +916,7 @@ em {
 .spotlight {
   background: var(--sage-deep);
   color: var(--cream);
-  padding: clamp(5rem, 10vw, 9rem) 0;
+  padding: clamp(3rem, 6vw, 5rem) 0;
   position: relative;
   overflow: hidden;
 }
@@ -937,7 +937,7 @@ em {
   position: relative;
 }
 
-.spotlight-head { margin-bottom: 4rem; max-width: 24ch; }
+.spotlight-head { margin-bottom: 2.25rem; max-width: 24ch; }
 
 .spotlight-title {
   font-size: var(--t-display-2);
@@ -950,7 +950,7 @@ em {
   gap: 0 1.5rem;
   margin: 1.5rem 0;
 }
-.spotlight-title span { display: inline-block; }
+.spotlight-title span { display: inline-block; white-space: nowrap; }
 .spotlight-title em { color: var(--clay); font-style: italic; }
 
 .spotlight-kicker {
