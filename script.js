@@ -244,9 +244,6 @@ function buildConsentBanner({ openInSettings = false } = {}) {
       </div>
 
       <div class="consent-actions">
-        <button type="button" class="consent-btn consent-btn-ghost" data-action="settings">
-          Einstellungen
-        </button>
         <button type="button" class="consent-btn consent-btn-ghost" data-action="reject">
           Nur notwendige
         </button>
@@ -257,6 +254,8 @@ function buildConsentBanner({ openInSettings = false } = {}) {
           Auswahl speichern
         </button>
       </div>
+
+      <button type="button" class="consent-link" data-action="settings">Einstellungen anpassen</button>
 
       <p class="consent-foot">
         <a href="/datenschutz.html">Datenschutz</a>
@@ -280,7 +279,7 @@ function buildConsentBanner({ openInSettings = false } = {}) {
   const showSettingsView = () => {
     banner.dataset.view = 'settings';
     settingsBtn.hidden = true;
-    rejectBtn.hidden = false;
+    rejectBtn.hidden = true;
     acceptBtn.hidden = false;
     saveBtn.hidden = false;
     if (Consent.load()) closeBtn.hidden = false;

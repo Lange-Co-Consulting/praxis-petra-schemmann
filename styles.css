@@ -2054,11 +2054,10 @@ a.ci-value:hover { color: var(--clay); }
 .toggle.is-locked input { cursor: not-allowed; }
 
 .consent-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  align-items: stretch;
 }
 
 .consent-btn {
@@ -2066,17 +2065,36 @@ a.ci-value:hover { color: var(--clay); }
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.72rem 1.15rem;
+  padding: 0.78rem 1.15rem;
   border-radius: 999px;
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all .25s var(--ease);
   letter-spacing: -0.005em;
   white-space: nowrap;
 }
+.consent-btn[hidden],
+.consent-link[hidden] { display: none !important; }
+
+.consent-link {
+  align-self: center;
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem auto 0;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--ink-mute);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color .2s var(--ease);
+}
+.consent-link:hover { color: var(--purple); }
 .consent-btn-ghost {
   background: transparent;
   color: var(--ink-soft);
